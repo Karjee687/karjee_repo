@@ -1,0 +1,56 @@
+<div class="login-wrapper">
+  <div class="login-box">
+    <!-- Left section with logo and welcome -->
+    <div class="login-left">
+      <h2 class="brand">Smart Biz</h2>
+      <p class="left-text">Welcome to Smart Biz</p>
+    </div>
+
+    <!-- Right section with login form -->
+    <div class="login-right">
+      <h2>Login</h2>
+
+      <button
+        *ngIf="!showLogin"
+        (click)="showLogin = true"
+        class="smartbiz-btn"
+      >
+        SmartBiz
+      </button>
+
+      <form
+        *ngIf="showLogin"
+        (ngSubmit)="onLogin()"
+        #loginForm="ngForm"
+        class="login-form"
+      >
+        <input
+          type="text"
+          name="username"
+          placeholder="Enter Username"
+          class="form-input"
+          [(ngModel)]="username"
+          required
+        />
+
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter Password"
+          class="form-input"
+          [(ngModel)]="password"
+          required
+        />
+
+        <button type="submit" class="smartbiz-btn">Login</button>
+      </form>
+
+      <div class="quote-box">
+        <p>
+          If you are having trouble please contact <br />
+          <a href="mailto:support@positiveprime.com">support@smartbiz.com</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+<h2 class="page-title">Customer List</h2>
+
+<!-- Loading Message -->
+<div *ngIf="loading" class="info-message">🔄 Loading customers...</div>
+
+<!-- Error Message -->
+<div *ngIf="error" class="error-message">{{ error }}</div>
+
+<!-- Table Display -->
+<table
+  *ngIf="!loading && !error && customers.length > 0"
+  class="customer-table fade-in"
+>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Mobile</th>
+      <th>Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let customer of customers">
+      <td>{{ customer.id }}</td>
+      <td>{{ customer.name }}</td>
+      <td>{{ customer.mobile }}</td>
+      <td>{{ customer.address }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Back to Admin Button -->
+<button routerLink="/admin" class="back-button fade-in">
+  ⬅️ Back to Dashboard
+</button>
+
+<!-- No Data Message -->
+<div *ngIf="!loading && !error && customers.length === 0" class="info-message">
+  ⚠️ No customers found.
+</div>

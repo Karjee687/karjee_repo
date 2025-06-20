@@ -1,0 +1,36 @@
+<div class="admin-dashboard">
+  <!-- Sidebar Navigation -->
+  <nav class="admin-nav fade-in">
+    <h2 style="color: white" class="sidebar-title">SmartBiz</h2>
+    <a routerLink="/admin" routerLinkActive="active">📊 Dashboard</a>
+    <a routerLink="/customers" routerLinkActive="active">👥 Customers</a>
+    <a routerLink="/products" routerLinkActive="active">📦 Products</a>
+    <a routerLink="/transactions" routerLinkActive="active">🔁 Transactions</a>
+    <a routerLink="/reports" routerLinkActive="active">📈 Reports</a>
+    <a routerLink="/" routerLinkActive="active">🚪 Logout</a>
+  </nav>
+
+  <!-- Main Content Area -->
+  <div class="dashboard-main">
+    <h1 class="welcome">Welcome, <span class="admin-highlight">Admin</span></h1>
+
+    <!-- Overview Cards -->
+    <div class="overview-cards">
+      <div class="card fade-in-up">
+        👥 Total Customers: {{ customersCount }}
+      </div>
+      <div class="card fade-in-up">📦 Total Products: {{ productsCount }}</div>
+      <div class="card fade-in-up">💰 Total Sales: ₹{{ totalSales }}</div>
+      <div class="card fade-in-up">
+        ⏳ Pending Payments: ₹{{ pendingPayments }}
+      </div>
+    </div>
+
+    <!-- Quick Access Buttons -->
+    <div class="quick-links fade-in">
+      <button routerLink="/add-customers">➕ Add Customer</button>
+      <button routerLink="/add-product">📦 Add Product</button>
+      <button routerLink="/sales">💰 New Sale</button>
+    </div>
+  </div>
+</div>

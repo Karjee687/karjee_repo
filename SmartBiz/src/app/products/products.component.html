@@ -1,0 +1,25 @@
+<h2 class="page-title">Product List</h2>
+
+<table class="product-table fade-in">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Item Name</th>
+      <th>Price (₹)</th>
+      <th>Stock</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{ product.id }}</td>
+      <td>{{ product.name }}</td>
+      <td>{{ product.price }}</td>
+      <td>{{ product.stock }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Back to Admin Button -->
+<button routerLink="/admin" class="back-button fade-in">
+  ⬅️ Back to Dashboard
+</button>

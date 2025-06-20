@@ -1,0 +1,107 @@
+.login-wrapper {
+  background: linear-gradient(135deg, #e0d9ff, #d8e3ff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.login-box {
+  display: flex;
+  width: 70%;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Side */
+.login-left {
+  background: linear-gradient(135deg, #5e4fc6, #8a7ded);
+  color: white;
+  flex: 1;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.brand {
+  font-size: 2rem;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.left-text {
+  font-size: 1.2rem;
+  margin-top: auto;
+  opacity: 0.9;
+}
+
+/* Right Side */
+.login-right {
+  flex: 1.2;
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-right h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.form-input {
+  padding: 14px 18px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  background: #f5f5f5;
+  outline: none;
+  transition: all 0.3s;
+}
+.form-input:focus {
+  background: #eeeaff;
+  box-shadow: 0 0 0 2px #a3a1ff;
+}
+
+.smartbiz-btn {
+  background-color: #5e4fc6;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+.smartbiz-btn:hover {
+  background-color: #473fb1;
+}
+
+.quote-box {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+  padding: 10px;
+}

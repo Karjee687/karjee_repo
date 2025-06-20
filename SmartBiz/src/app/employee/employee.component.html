@@ -1,0 +1,34 @@
+<div class="employee-dashboard">
+  <!-- Sidebar Navigation -->
+  <nav class="employee-nav fade-in">
+    <h2 class="sidebar-title">SmartBiz</h2>
+    <a routerLink="/employee" routerLinkActive="active">🏠 Dashboard</a>
+    <a routerLink="/sales" routerLinkActive="active">💰 Make Sale</a>
+    <a routerLink="/add-customers" routerLinkActive="active">➕ Add Customer</a>
+    <a routerLink="/products" routerLinkActive="active">📦 View Products</a>
+    <a routerLink="/customers" routerLinkActive="active">👥 View Customers</a>
+    <a routerLink="/" routerLinkActive="active">🚪 Logout</a>
+  </nav>
+
+  <!-- Main Content Area -->
+  <div class="dashboard-main">
+    <h1 class="welcome">
+      Welcome, <span class="employee-highlight">Employee</span>
+    </h1>
+
+    <!-- Summary Cards -->
+    <div class="overview-cards">
+      <div class="card fade-in-up">➕ Add New Customer</div>
+      <div class="card fade-in-up">💰 Make a Sale</div>
+      <div class="card fade-in-up">👥 View Customers</div>
+      <div class="card fade-in-up">📦 View Products</div>
+    </div>
+
+    <!-- Note Section -->
+    <div class="info-note fade-in">
+      ⚠️ <strong>Note:</strong> You have read-only access to customers &
+      products. You cannot modify, delete, or access admin-only features like
+      reports.
+    </div>
+  </div>
+</div>
