@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { CustomersComponent } from './customers/customers.component';
 import { ProductsComponent } from './products/products.component';
 import { AddCustomersComponent } from './add-customers/add-customers.component';
+import { ReportsComponent } from './reports/reports.component';
+import { TransactionsComponent } from './transactions/transactions.component';
 
 // ✅ Define routes here
 const routes: Routes = [
@@ -29,6 +31,8 @@ const routes: Routes = [
     CustomersComponent,
     ProductsComponent,
     AddCustomersComponent,
+    ReportsComponent,
+    TransactionsComponent,
   ],
   imports: [
     BrowserModule,
